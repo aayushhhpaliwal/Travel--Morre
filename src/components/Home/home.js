@@ -1,13 +1,11 @@
 import React from "react";
 import { Button } from "@mui/material";
+import Banner from "./banner";
 function Home() {
   return (
     <div className="">
-      <div className="Right-Dashboard">
-        <span>Create, Explore & Collect Digital Art NFTs</span>
-        <Button>Start Your Journey Now</Button>
-        <Button>Explore </Button>
-      </div>
+    <Banner />
+    
       <div className="Left-Dashboard"></div>
     </div>
   );

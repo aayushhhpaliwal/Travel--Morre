@@ -8,6 +8,7 @@ export const NavbarContainer = styled(Box)({
   justifyContent: "space-between",
   alignItems: "center",
   padding: "2rem 3rem",
+  zIndex:"10"
 });
 export const NavbarInsideContainer = styled(Box)({
   display: "flex",
@@ -15,6 +16,7 @@ export const NavbarInsideContainer = styled(Box)({
   alignItems: "center",
   //   justifyContent: "space-between",
   //   padding: "3rem",
+  zIndex:"10"
 });
 
 export const ImageContainer = styled("img")(
@@ -24,6 +26,7 @@ export const ImageContainer = styled("img")(
     marginRight: marginRight ? marginRight : "0",
     marginLeft: marginLeft ? marginLeft : "0",
     objectFit: "cover",
+    
     //   position: "relative",
   })
 );
