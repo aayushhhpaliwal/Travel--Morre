@@ -8,7 +8,7 @@ import { UniversalFlexDiv } from "../TypographyAssets/TypographyAssets";
 import Banner from "./banner";
 function Home() {
   return (
-    <UniversalFlexDiv flexDirection={"column"} alignItems={"inherit"}>
+    <UniversalFlexDiv flexDirection={"column"} alignItems={"inherit "}>
       <Banner />
       <Footer></Footer>
     </UniversalFlexDiv>
