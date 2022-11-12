@@ -39,6 +39,7 @@ export const FlexDiv = styled(Box)({
   display: "flex",
   gap: "0.5rem",
   alignItems: "center",
+
   //   flexDirection: "column",
   //   justifyContent: "space-between",
   //   padding: "3rem",
