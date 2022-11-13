@@ -1,6 +1,9 @@
 import React from 'react'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import PlacestravelCard from '../PlaceTravelCard/PlacestravelCard';
+import { OuterArea } from './Element-Travel';
+
 
 function TravelSlider() {
     const responsive = {
@@ -24,16 +27,18 @@ function TravelSlider() {
       };
       
     return (
-    <div>
+    <OuterArea>
 
    
     <Carousel responsive={responsive}>
-      <div>Item 1</div>
-      <div>Item 2</div>
-      <div>Item 3</div>
-      <div>Item 4</div>
-    </Carousel>;
-    </div>
+      <PlacestravelCard />
+      <PlacestravelCard />
+      <PlacestravelCard />
+      <PlacestravelCard />
+      <PlacestravelCard />
+    </Carousel>
+
+    </OuterArea>
   )
 }
 
