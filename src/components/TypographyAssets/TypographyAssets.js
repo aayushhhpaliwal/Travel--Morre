@@ -1,15 +1,15 @@
 import { Box, Typography, styled } from "@mui/material";
 
-export const LogoHeader = styled(Typography)(({ fSize, fWeight }) => ({
-  fontSize: fSize ? fSize : "1rem",
-  fontWeight: fWeight ? fWeight : 500,
+export const LogoHeader = styled(Typography)(({ fsize, fweight }) => ({
+  fontSize: fsize ? fsize : "1rem",
+  fontWeight: fweight ? fweight : 500,
   fontFamily: "Poppins",
   cursor: "pointer",
 }));
 
-export const SubHeader = styled(Typography)(({ fSize, fWeight }) => ({
-  fontSize: fSize ? fSize : "1rem",
-  fontWeight: fWeight ? fWeight : 500,
+export const SubHeader = styled(Typography)(({ fsize, fweight }) => ({
+  fontSize: fsize ? fsize : "1rem",
+  fontWeight: fweight ? fweight : 500,
   fontFamily: "Poppins",
   cursor: "pointer",
 }));

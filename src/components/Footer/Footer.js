@@ -24,7 +24,7 @@ function Footer() {
         gap={"1.2rem"}
         padding={"1rem"}
       >
-        <LogoHeader fSize={"2rem"} fWeight={900}>
+        <LogoHeader fsize={"2rem"} fweight={900}>
           TravelMorre.
         </LogoHeader>
 
