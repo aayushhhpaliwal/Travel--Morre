@@ -28,28 +28,34 @@ export const UniversalFlexDiv = styled(Box)(
 );
 
 export const ImageContainer = styled("img")(
-  ({ width, height, marginRight, marginLeft, borderRadius,  position }) => ({
+  ({ width, height, marginRight, marginLeft, borderRadius,  position, marginTop, paddingTop, overflow}) => ({
     width: width ? width : "8rem",
     height: height ? height : "8rem",
     marginRight: marginRight ? marginRight : "0",
     marginLeft: marginLeft ? marginLeft : "0",
     objectFit: "cover",
     borderRadius: borderRadius? borderRadius:"0",
-    position :position && position
+    marginTop :marginTop && marginTop,
+    position :position && position,
+    paddingTop : paddingTop && paddingTop,
+    overflow:"visible"
+    
    
  
     //   position: "relative",
   })
 );
 export const ComponentContainer = styled(Box)(
-({ width, height, borderRadius, position, marginTop, padding}) => ({
+({ width, height, borderRadius, position, marginTop, paddingTop}) => ({
       width: width? width:"10rem", 
       height: height? height:"auto",
       borderRadius: borderRadius? borderRadius:"0", 
       backgroundColor:"#fff",
       position :position && position, 
       marginTop :marginTop && marginTop, 
-      padding: padding && padding
+      paddingTop: paddingTop && paddingTop,
+      overflow:"visible"
       
   })
+  
 );

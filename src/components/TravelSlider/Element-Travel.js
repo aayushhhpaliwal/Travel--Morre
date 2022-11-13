@@ -5,7 +5,7 @@ import styled from "@emotion/styled";
 
 
    export const OuterArea = styled(Box)({
-   backgroundColor:"#F8F9FA",
+   backgroundColor:"skyblue",
    borderRadius:"20px" ,
 //    width:"100%",
    height:"auto",
