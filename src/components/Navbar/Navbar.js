@@ -20,7 +20,7 @@ function Navbar() {
         {/* travel morre logo */}
         {/* <ImageContainer src={travelmorreLogo}></ImageContainer> */}
 
-        <NavbarHeaders fSize={"2rem"} fWeight={900}>
+        <NavbarHeaders fsize={"2rem"} fweight={900}>
           Travelmorre.
         </NavbarHeaders>
 

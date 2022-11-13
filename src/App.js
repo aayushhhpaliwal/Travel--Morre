@@ -1,11 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Home from "./components/Home/home";
-import About from "./components/About/about";
-import Contact from "./components/Contact/contact";
+import Home from "./Pages/Home/home";
+import About from "./Pages/About/about";
+import Contact from "./Pages/Contact/contact";
 import Navbar from "./components/Navbar/Navbar";
+
+import Carousel from "react-multi-carousel";
+import TravelCardForBanner from "./components/TravelCardForBanner/TravelCardForBanner";
 
 function App() {
   return (
