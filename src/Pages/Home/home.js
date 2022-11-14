@@ -4,11 +4,13 @@ import { UniversalFlexDiv } from "../../components/TypographyAssets/TypographyAs
 import TravelSlider from "../../components/TravelSlider/TravelSlider"
 
 import Banner from "../../components/Banner/banner";
+import Services from "../../components/Services/Services";
 function Home() {
   return (
     <UniversalFlexDiv flexDirection={"column"} alignItems={"inherit "}>
       <Banner />
     <TravelSlider />
+    <Services />
       <Footer></Footer>
     </UniversalFlexDiv>
   );

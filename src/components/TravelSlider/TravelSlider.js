@@ -3,7 +3,8 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import PlacestravelCard from '../PlaceTravelCard/PlacestravelCard';
 import { OuterArea } from './Element-Travel';
-
+import { SubHeader } from '../TypographyAssets/TypographyAssets';
+import data from '../../assets/Data/data';
 
 function TravelSlider() {
     const responsive = {
@@ -14,11 +15,11 @@ function TravelSlider() {
         },
         desktop: {
           breakpoint: { max: 3000, min: 1024 },
-          items: 3
+          items: 5
         },
         tablet: {
           breakpoint: { max: 1024, min: 464 },
-          items: 2
+          items: 3
         },
         mobile: {
           breakpoint: { max: 464, min: 0 },
@@ -29,13 +30,14 @@ function TravelSlider() {
     return (
     <OuterArea>
 
-   
+   <SubHeader fontSize="3rem" margin="1rem">Places</SubHeader>
     <Carousel responsive={responsive}>
-      <PlacestravelCard />
-      <PlacestravelCard />
-      <PlacestravelCard />
-      <PlacestravelCard />
-      <PlacestravelCard />
+   
+
+    {data.map( (place, index) => 
+      <PlacestravelCard title= {place.title}  description= {place.desc} index={index} img={place.img} ></PlacestravelCard>
+    )}
+
     </Carousel>
 
     </OuterArea>
