@@ -1,14 +1,12 @@
 import React from 'react'
 import Dubai from '../../assets/Places/Dubai.jpg'
-
 import { ComponentContainer, ImageContainer, SubHeader, UniversalFlexDiv, } from '../TypographyAssets/TypographyAssets'
-
 
 function PlacestravelCard(props) {
   return (
     <>
    
-    <ImageContainer src={props.img} width="22rem" height="30rem" borderRadius="1rem"   marginLeft="5%" position="absolute">
+    <ImageContainer src={Dubai} width="22rem" height="30rem" borderRadius="1rem"   marginLeft="5%" position="absolute">
     </ImageContainer>
 
     <ComponentContainer borderRadius={"1rem"} width="22rem" height="20rem" marginTop="4rem" paddingTop="27rem" padding="0rem 2rem">
