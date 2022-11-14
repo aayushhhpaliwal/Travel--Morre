@@ -6,6 +6,7 @@ import Banner from "../../assets/banner1 (2).jpg";
 export const BannerContainer = styled(Box)({
   display: "flex",
   justifyContent: "left",
+  height:"44rem"
   // position:"absoulute"
 });
 export const BannerFirst = styled(Box)({
@@ -22,7 +23,7 @@ export const BannerHead = styled(Typography)({
 
 export const Test = styled(Box)({
   backgroundImage: `url("${Banner}")`,
-  height: "50rem",
+  // height: "50rem",
   width: "50%",
   position: "absolute",
   top: "0",
@@ -32,14 +33,20 @@ export const Test = styled(Box)({
   padding: "1rem",
 });
 export const BannerSecond = styled(Box)({
-  height: "50rem",
+
   width: "100%",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   gap: "1rem",
+  height:"50rem"
   // padding: "1rem",
 
   // backgroundColor: 'white',
   // opacity:"0.3"
+});
+
+export const BannerCarouselContainer = styled(Box)({
+  width: "80%",
+  height: "auto",
 });

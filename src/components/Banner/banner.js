@@ -6,6 +6,7 @@ import {
   BannerHead,
   BannerSubHead,
   Test,
+  BannerCarouselContainer
 } from "./elements";
 import travelmorreLogo from "../../assets/banner.jpg";
 import TravelCardForBanner from "../TravelCardForBanner/TravelCardForBanner";
@@ -50,31 +51,24 @@ function banner() {
       </BannerFirst>
 
       <Test>
-        <BannerSecond>
-          <div
-            style={{
-              width: "60rem",
-              height: "50rem",
-              marginTop: "30rem",
-            }}
-          >
-            <Carousel
-              responsive={responsive}
-              draggable={true}
-              showDots={true}
-              containerClass="carousel-container"
-              dotListClass="custom-dot-list-style"
-              itemClass="carousel-item-padding-40-px"
-            >
-              {[...Array(5)].map((index) => (
-                <TravelCardForBanner></TravelCardForBanner>
-              ))}
-            </Carousel>
-          </div>
-        </BannerSecond>
-      </Test>
+      <BannerSecond>
+      <BannerCarouselContainer>
 
-      <></>
+        <Carousel
+          responsive={responsive}
+          draggable={true}
+          showDots={true}
+          containerClass="carousel-container"
+          dotListClass="custom-dot-list-style"
+          itemClass="carousel-item-padding-40-px"
+        >
+          {[...Array(5)].map((index) => (
+            <TravelCardForBanner></TravelCardForBanner>
+          ))}
+        </Carousel>
+        </BannerCarouselContainer>
+      </BannerSecond>
+    </Test>
     </BannerContainer>
   );
 }
