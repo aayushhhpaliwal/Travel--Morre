@@ -7,13 +7,12 @@ function Moments() {
       width: "100%",
       height: "52rem",
       backgroundColor: "red",
-      // justifyContent: "center",
-      // alignItems: "center",
-      borderRadius:"50px;"
+      borderRadius:"50px"
     }}
   >
     Hi
   </div>
+  
   )
 }
 
