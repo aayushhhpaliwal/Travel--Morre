@@ -1,18 +1,18 @@
 import React from 'react'
 
-function Moments() {
+import { ComponentContainer, ImageContainer, SubHeader, UniversalFlexDiv, } from '../TypographyAssets/TypographyAssets'
+function Moments(
+  {image}
+) {
+ 
   return (
-    <div
-    style={{
-      width: "100%",
-      height: "52rem",
-      backgroundColor: "red",
-      borderRadius:"50px"
-    }}
-  >
-    Hi
-  </div>
-  
+
+  <ImageContainer src= {image && image} width="100%"
+  height= "52rem"  backgroundColor="red"
+    borderRadius="50px" >
+    </ImageContainer>
+
+
   )
 }
 

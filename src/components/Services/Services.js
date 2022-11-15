@@ -1,11 +1,12 @@
 import React from 'react'
 
-import { UniversalFlexDiv, ComponentContainer, ImageContainer, BannerFirst1, BannerContainer1, BannerSecond1, BannerCarouselContainer1 } from '../TypographyAssets/TypographyAssets'
+import { UniversalFlexDiv, ComponentContainer, ImageContainer, BannerFirst1, BannerContainer1, BannerSecond1, BannerCarouselContainer1, SubHeader } from '../TypographyAssets/TypographyAssets'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import TravelCardForBanner from '../TravelCardForBanner/TravelCardForBanner';
 import PlacestravelCard from '../PlaceTravelCard/PlacestravelCard';
 import Moments from '../Moments/Moments';
+import servicedata from '../../assets/Data/servicedata';
 
 function Services() {
     const responsive = {
@@ -29,9 +30,10 @@ function Services() {
       };
 
   return (
-   
+    <>
+    <SubHeader fontSize="3rem" marginLeft="5rem">Have your own Story</SubHeader>     
  <BannerContainer1>
-       
+ 
     <BannerFirst1>
                <ImageContainer  src='Places/family.jpg' width="45%" height="65%" marginLeft="1rem" marginBottom="1rem"borderRadius="15px"></ImageContainer>
                <ImageContainer  src='Places/Honeymoon.jpg' width="45%" height="65%"  marginLeft="1rem" marginBottom="1rem"borderRadius="15px"></ImageContainer>
@@ -43,23 +45,20 @@ function Services() {
        <BannerCarouselContainer1>
  
          <Carousel
-           responsive={responsive}
-           draggable={true}
-           showDots={true}
-           containerClass="carousel-container"
-           dotListClass="custom-dot-list-style"
-           itemClass="carousel-item-padding-40-px"
-         >
-           {[...Array(5)].map((index) => (
-             <Moments></Moments>
-           ))}
+           responsive={responsive} >
+         
+           {servicedata.map((service, index) =>
+            <Moments image={service.image} index={index}></Moments>
+            )}
+          
+          
          </Carousel>
          </BannerCarouselContainer1>
        </BannerSecond1>
   
        </BannerContainer1>
        
-   
+       </>
   )
 }
 

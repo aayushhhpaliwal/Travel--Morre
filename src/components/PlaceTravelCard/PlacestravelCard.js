@@ -1,7 +1,5 @@
 import React from 'react'
 
-
-
 import { ComponentContainer, ImageContainer, SubHeader, UniversalFlexDiv, } from '../TypographyAssets/TypographyAssets'
 import data from '../../assets/Data/data'
 import { Title } from '@mui/icons-material'
