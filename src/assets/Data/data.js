@@ -12,7 +12,7 @@ const data = [
   {
     title: "Newyork",
     desc: "New York City is a global cultural, financial, and media center with a significant influence on commerce, health care and life sciences, entertainment, research ...",
-    img: "./Places/Newyork.jpg",
+    img: "./Places/ny.jpg",
   },
   {
     title: "Japan",
