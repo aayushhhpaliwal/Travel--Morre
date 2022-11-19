@@ -34,7 +34,7 @@ function Services() {
     <SubHeader fontSize="3rem" marginLeft="5rem">Have your own Story</SubHeader>     
  <BannerContainer1>
  
-    <BannerFirst1>
+  <BannerFirst1>
                <ImageContainer  src='Places/family.jpg' width="45%" height="65%" marginLeft="1rem" marginBottom="1rem"borderRadius="15px"></ImageContainer>
                <ImageContainer  src='Places/Honeymoon.jpg' width="45%" height="65%"  marginLeft="1rem" marginBottom="1rem"borderRadius="15px"></ImageContainer>
                <ImageContainer  src='Places/Visa.jpg' width="45%" height="65%" marginLeft="1rem" marginBottom="1rem"borderRadius="15px"></ImageContainer>
@@ -56,7 +56,7 @@ function Services() {
          </BannerCarouselContainer1>
        </BannerSecond1>
   
-       </BannerContainer1>
+     </BannerContainer1>
        
        </>
   )

@@ -7,12 +7,13 @@ export const LogoHeader = styled(Typography)(({ fsize, fweight }) => ({
   cursor: "pointer",
 }));
 
-export const SubHeader = styled(Typography)(({ fontSize, fontweight, margin }) => ({
+export const SubHeader = styled(Typography)(({ fontSize, fontweight, margin, textAlign }) => ({
   fontSize: fontSize ? fontSize : "1rem",
   fontWeight: fontweight ? fontweight : 500,
   fontFamily: "Poppins",
   cursor: "pointer",
-  margin: margin && margin
+  margin: margin && margin, 
+  textAlign:textAlign && textAlign
 }));
 
 export const UniversalFlexDiv = styled(Box)(
@@ -30,8 +31,8 @@ export const UniversalFlexDiv = styled(Box)(
 
 export const ImageContainer = styled("img")(
   ({ width, height, marginRight, marginLeft, borderRadius,  position, marginTop, paddingTop,marginBottom,overflow}) => ({
-    width: width ? width : "8rem",
-    height: height ? height : "8rem",
+    width: width && width,
+    height: height && height ,
     marginRight: marginRight ? marginRight : "0",
     marginLeft: marginLeft ? marginLeft : "0",
     objectFit: "cover",
@@ -48,11 +49,11 @@ export const ImageContainer = styled("img")(
   })
 );
 export const ComponentContainer = styled(Box)(
-({ width, height, borderRadius, position, marginTop, paddingTop}) => ({
+({ width, height, borderRadius, position, marginTop, paddingTop, backgroundColor}) => ({
       width: width? width:"10rem", 
       height: height? height:"auto",
       borderRadius: borderRadius? borderRadius:"0", 
-      backgroundColor:"#fff",
+      backgroundColor: backgroundColor && backgroundColor,
       position :position && position, 
       marginTop :marginTop && marginTop, 
       paddingTop: paddingTop && paddingTop,
@@ -67,12 +68,13 @@ export const BannerFirst1 = styled(Box)({
   width: "40%",
   padding: "2% 0% 2% 10%",
   textAlign: "left",
+  height:"40rem"
 });
 
 export const BannerContainer1 = styled(Box)({
   display: "flex",
   justifyContent: "left",
-  height:"44rem"
+  height:"60rem"
   // position:"absoulute"
 });
 

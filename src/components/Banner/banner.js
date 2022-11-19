@@ -12,28 +12,20 @@ import travelmorreLogo from "../../assets/banner.jpg";
 import TravelCardForBanner from "../TravelCardForBanner/TravelCardForBanner";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/effect-cards";
+
+import "./styles.css";
+
+// import required modules
+import { EffectCards } from "swiper";
 import { SystemSecurityUpdate } from "@mui/icons-material";
 
 function banner() {
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
+
   return (
     <BannerContainer>
       <BannerFirst>
@@ -52,21 +44,33 @@ function banner() {
 
       <Test>
       <BannerSecond>
-      <BannerCarouselContainer>
+      <Swiper
+      effect={"cards"}
+      grabCursor={true}
+      modules={[EffectCards]}
+      className="mySwiper"
+    >
+      <SwiperSlide>
+      <img src="Banner/2.jpg" className="bannerimg"></img>
+      </SwiperSlide>
+      <SwiperSlide>
+      <img src="Banner/1.jpg" className="bannerimg"></img>
+      </SwiperSlide>
+      <SwiperSlide>
+      <img src="Banner/3.jpg" className="bannerimg"></img>
+      </SwiperSlide>
+      <SwiperSlide>
+      <img src="Banner/4.jpg" className="bannerimg"></img>
+      </SwiperSlide>
+      <SwiperSlide>
+      <img src="Banner/5.jpg" className="bannerimg"></img>
+      </SwiperSlide>
+      <SwiperSlide>
+      <img src="Banner/2.jpg" className="bannerimg"></img>
+      </SwiperSlide>
+      
+    </Swiper>
 
-        <Carousel
-          responsive={responsive}
-          draggable={true}
-          showDots={true}
-          containerClass="carousel-container"
-          dotListClass="custom-dot-list-style"
-          itemClass="carousel-item-padding-40-px"
-        >
-          {[...Array(5)].map((index) => (
-            <TravelCardForBanner></TravelCardForBanner>
-          ))}
-        </Carousel>
-        </BannerCarouselContainer>
       </BannerSecond>
     </Test>
     </BannerContainer>

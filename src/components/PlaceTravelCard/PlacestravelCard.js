@@ -12,7 +12,7 @@ function PlacestravelCard(
   
     <ImageContainer src={img && img} width="15rem" height="23rem" borderRadius="1rem"   marginLeft="5%" position="absolute">
     </ImageContainer>
-    <ComponentContainer borderRadius={"1rem"} width="13rem" height="17rem" marginTop="4rem" paddingTop="20rem" padding="0rem 2rem">
+    <ComponentContainer borderRadius={"1rem"} width="13rem" height="17rem" marginTop="4rem" paddingTop="20rem" padding="0rem 2rem" backgroundColor="#fff">
     <h1>{title && title}</h1>
     <br></br>
     <hr width="80%"></hr>
