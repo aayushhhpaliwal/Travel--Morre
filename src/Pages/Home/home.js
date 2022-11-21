@@ -5,11 +5,13 @@ import TravelSlider from "../../components/TravelSlider/TravelSlider";
 import Partner from "../../Partners/Partner";
 import Banner from "../../components/Banner/banner";
 import Services from "../../components/Services/Services";
+import NewBanner from "../../components/NewBanner/NewBanner"
 
 function Home() {
   return (
     <UniversalFlexDiv flexDirection={"column"} alignItems={"inherit "}>
-      <Banner />
+    <NewBanner />  
+    <Banner />
       <TravelSlider />
       <Services />
       {/* <Partner /> */}

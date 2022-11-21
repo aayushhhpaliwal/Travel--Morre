@@ -13,11 +13,11 @@ import TravelCardForBanner from "../TravelCardForBanner/TravelCardForBanner";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import 'swiper/less/navigation';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
-
+import { Navigation } from "swiper";
 import "./styles.css";
 
 // import required modules
@@ -25,7 +25,7 @@ import { EffectCards } from "swiper";
 import { SystemSecurityUpdate } from "@mui/icons-material";
 
 function banner() {
-
+ 
   return (
     <BannerContainer>
       <BannerFirst>
@@ -47,8 +47,10 @@ function banner() {
       <Swiper
       effect={"cards"}
       grabCursor={true}
-      modules={[EffectCards]}
+      modules={[EffectCards, Navigation]}
+      navigation={true}
       className="mySwiper"
+      
     >
       <SwiperSlide>
       <img src="Banner/2.jpg" className="bannerimg"></img>

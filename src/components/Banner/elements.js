@@ -1,4 +1,4 @@
-import { Height } from "@mui/icons-material";
+import { Height, Margin } from "@mui/icons-material";
 import { Box, Typography, styled } from "@mui/material";
 import { positions } from "@mui/system";
 import Banner from "../../assets/banner1 (2).jpg";
@@ -6,12 +6,14 @@ import Banner from "../../assets/banner1 (2).jpg";
 export const BannerContainer = styled(Box)({
   display: "flex",
   justifyContent: "left",
-  height:"44rem"
-  // position:"absoulute"
+  height:"44rem",
+  maxWidth:"100%", 
+  position:"relative",
+  marginTop:"38rem"
 });
 export const BannerFirst = styled(Box)({
-  width: "40%",
-  padding: "5% 0% 2% 10%",
+  width: "45%",
+  padding: "3% 0% 2% 5%",
   textAlign: "left",
 });
 export const BannerSubHead = styled(Typography)({
@@ -24,13 +26,11 @@ export const BannerHead = styled(Typography)({
 export const Test = styled(Box)({
   backgroundImage: `url("${Banner}")`,
   // height: "50rem",
-  width: "50%",
-  position: "absolute",
-  top: "0",
-  right: "0",
+  maxWidth: "50%",
+  // position: "absolute",
   borderRadius: "0 0 0 10rem",
   backgroundColor: (0, 0, 0, 0.5),
-  padding: "1rem",
+  // padding: "1rem",
 });
 export const BannerSecond = styled(Box)({
 
@@ -38,8 +38,8 @@ export const BannerSecond = styled(Box)({
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  gap: "1rem",
-  height:"50rem"
+  // gap: "1rem",
+  height:"100%"
   // padding: "1rem",
 
   // backgroundColor: 'white',
@@ -47,6 +47,6 @@ export const BannerSecond = styled(Box)({
 });
 
 export const BannerCarouselContainer = styled(Box)({
-  width: "80%",
+  width: "70%",
   height: "auto",
 });

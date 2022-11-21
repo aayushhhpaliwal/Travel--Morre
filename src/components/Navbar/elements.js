@@ -8,10 +8,12 @@ export const NavbarContainer = styled(Box)({
   justifyContent: "space-between",
   alignItems: "center",
   padding: "2rem 3rem",
-  zIndex: "10",
+  zIndex: "1",
+  backgroundColor:"white",
 });
 export const NavbarInsideContainer = styled(Box)({
   display: "flex",
+  // backgroundColor:"white",
   gap: "3rem",
   alignItems: "center",
   //   justifyContent: "space-between",
