@@ -6,18 +6,18 @@ import {
   BannerHead,
   BannerSubHead,
   Test,
-  BannerCarouselContainer
+  BannerCarouselContainer,
 } from "./elements";
 import travelmorreLogo from "../../assets/banner.jpg";
 import TravelCardForBanner from "../TravelCardForBanner/TravelCardForBanner";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import "swiper/less/navigation";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-cards";
-
+import { Navigation } from "swiper";
 import "./styles.css";
 
 // import required modules
@@ -25,7 +25,6 @@ import { EffectCards } from "swiper";
 import { SystemSecurityUpdate } from "@mui/icons-material";
 
 function banner() {
-
   return (
     <BannerContainer>
       <BannerFirst>
@@ -43,36 +42,35 @@ function banner() {
       </BannerFirst>
 
       <Test>
-      <BannerSecond>
-      <Swiper
-      effect={"cards"}
-      grabCursor={true}
-      modules={[EffectCards]}
-      className="mySwiper"
-    >
-      <SwiperSlide>
-      <img src="Banner/2.jpg" className="bannerimg"></img>
-      </SwiperSlide>
-      <SwiperSlide>
-      <img src="Banner/1.jpg" className="bannerimg"></img>
-      </SwiperSlide>
-      <SwiperSlide>
-      <img src="Banner/3.jpg" className="bannerimg"></img>
-      </SwiperSlide>
-      <SwiperSlide>
-      <img src="Banner/4.jpg" className="bannerimg"></img>
-      </SwiperSlide>
-      <SwiperSlide>
-      <img src="Banner/5.jpg" className="bannerimg"></img>
-      </SwiperSlide>
-      <SwiperSlide>
-      <img src="Banner/2.jpg" className="bannerimg"></img>
-      </SwiperSlide>
-      
-    </Swiper>
-
-      </BannerSecond>
-    </Test>
+        <BannerSecond>
+          <Swiper
+            effect={"cards"}
+            grabCursor={true}
+            modules={[EffectCards, Navigation]}
+            navigation={true}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src="Banner/2.jpg" className="bannerimg"></img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="Banner/1.jpg" className="bannerimg"></img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="Banner/3.jpg" className="bannerimg"></img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="Banner/4.jpg" className="bannerimg"></img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="Banner/5.jpg" className="bannerimg"></img>
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src="Banner/2.jpg" className="bannerimg"></img>
+            </SwiperSlide>
+          </Swiper>
+        </BannerSecond>
+      </Test>
     </BannerContainer>
   );
 }

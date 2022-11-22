@@ -14,6 +14,7 @@ import Facebook from "../../assets/fb.png";
 import Instagram from "../../assets/insta.png";
 import Twitter from "../../assets/twitter.png";
 import Whatsapp from "../../assets/whatsapp.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -37,36 +38,57 @@ function Footer() {
           gap={"2rem"}
           justifyContent={"flexStart"}
         >
-          <ImageContainer
-            src={Facebook}
-            width={"2rem"}
-            height={"2rem"}
-          ></ImageContainer>
-          <ImageContainer
-            src={Instagram}
-            width={"2rem"}
-            height={"2rem"}
-          ></ImageContainer>
-          <ImageContainer
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.facebook.com/108738228710554"
+          >
+            <ImageContainer
+              src={Facebook}
+              width={"2rem"}
+              height={"2rem"}
+            ></ImageContainer>
+          </a>
+
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.instagram.com/travelmorre"
+          >
+            <ImageContainer
+              src={Instagram}
+              width={"2rem"}
+              height={"2rem"}
+            ></ImageContainer>
+          </a>
+
+          {/* <ImageContainer
             src={Twitter}
             width={"2rem"}
             height={"2rem"}
-          ></ImageContainer>
-          <ImageContainer
-            src={Whatsapp}
-            width={"2rem"}
-            height={"2rem"}
-          ></ImageContainer>
+          ></ImageContainer> */}
+
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://wa.me/919354029660?text=Hey,%20I%20want%20to%20Explore%20more%20about%20travelMorre%20Services...%20"
+          >
+            <ImageContainer
+              src={Whatsapp}
+              width={"2rem"}
+              height={"2rem"}
+            ></ImageContainer>
+          </a>
         </UniversalFlexDiv>
       </UniversalFlexDiv>
       <UniversalFlexDiv alignItems={"start"}>
         <UniversalFlexDiv flexDirection={"column"} alignItems={"start"}>
           <Typography>Top Destinations</Typography>
           <Typography>Dubai</Typography>
-          <Typography>Switzerland</Typography>
           <Typography>Maldives</Typography>
-          <Typography>USA</Typography>
-          <Typography>Uk</Typography>
+          <Typography>Bali</Typography>
+          <Typography>Thailand</Typography>
+          <Typography>Andaman & Nicobar</Typography>
         </UniversalFlexDiv>
         <UniversalFlexDiv flexDirection={"column"} alignItems={"start"}>
           <Typography>Company</Typography>
