@@ -9,7 +9,7 @@ import {
   FlexDiv,
 } from "./elements.js";
 
-import travelmorreLogo from "../../assets/travelmorreLogo.jpg";
+import travelmorreLogo from "../../assets/travelmorre.png";
 import ArrowDown from "../../assets/arrowDown.png";
 import SearchIcon from "../../assets/SearchIcon.png";
 
@@ -18,16 +18,33 @@ function Navbar() {
     <NavbarContainer>
       <NavbarInsideContainer>
         {/* travel morre logo */}
-        {/* <ImageContainer src={travelmorreLogo}></ImageContainer> */}
+
         <a
           target="_blank"
           rel="noreferrer"
           href="https://wa.me/919354029660?text=Hey,%20I%20want%20to%20Explore%20more%20about%20travelMorre%20Services...%20"
-          style={{ color: "inherit", textDecoration: "none" }}
+          style={{
+            color: "inherit",
+            textDecoration: "none",
+          }}
         >
-          <NavbarHeaders fsize={"2rem"} fweight={900}>
-            Travelmorre.
-          </NavbarHeaders>
+          <div
+            style={{
+              display: "flex",
+              gap: "1rem",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <ImageContainer
+              src={travelmorreLogo}
+              width={"2rem"}
+              height={"2rem"}
+            ></ImageContainer>
+            <NavbarHeaders fsize={"2rem"} fweight={900}>
+              Travelmorre.
+            </NavbarHeaders>
+          </div>
         </a>
 
         {/* <FlexDiv>
@@ -54,6 +71,7 @@ function Navbar() {
           target="_blank"
           rel="noreferrer"
           href="https://wa.me/919354029660?text=Hey,%20I%20want%20to%20Explore%20more%20about%20travelMorre%20Services...%20"
+          style={{ color: "inherit", textDecoration: "none" }}
         >
           <Button
             variant="contained"
@@ -65,7 +83,7 @@ function Navbar() {
               borderRadius: "1.2rem",
             }}
           >
-            Book Trips Now
+            Book Your Trip Now
           </Button>
         </a>
         {/* <NavbarHeaders>Book Now</NavbarHeaders> */}

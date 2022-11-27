@@ -1,6 +1,7 @@
 .mySwiper {
-  width: 70%;
-  height: 80%;
+  width: 40rem;
+  height: 40rem;
+  object-fit: cover;
 }
 
 .swiper-slide {
@@ -11,4 +12,10 @@
   font-size: 22px;
   font-weight: bold;
   color: #fff;
+}
+
+.bannerimg {
+  width: 40rem;
+  height: 40rem;
+  object-fit: cover;
 }

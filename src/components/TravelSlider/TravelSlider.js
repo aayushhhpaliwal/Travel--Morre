@@ -5,6 +5,7 @@ import PlacestravelCard from "../PlaceTravelCard/PlacestravelCard";
 import { OuterArea } from "./Element-Travel";
 import { SubHeader } from "../TypographyAssets/TypographyAssets";
 import data from "../../assets/Data/data";
+import { Toolbar } from "@mui/material";
 
 function TravelSlider() {
   const responsive = {
@@ -41,12 +42,16 @@ function TravelSlider() {
             href={place.link}
             style={{ color: "inherit", textDecoration: "none" }}
           >
-            <PlacestravelCard
-              title={place.title}
-              description={place.desc}
-              index={index}
-              img={place.img}
-            ></PlacestravelCard>
+            <Toolbar
+              title={`Click Here To See More Details about ${place.title}`}
+            >
+              <PlacestravelCard
+                title={place.title}
+                description={place.desc}
+                index={index}
+                img={place.img}
+              ></PlacestravelCard>
+            </Toolbar>
           </a>
         ))}
       </Carousel>

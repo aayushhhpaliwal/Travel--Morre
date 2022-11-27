@@ -39,33 +39,34 @@ function banner() {
             grabCursor={true}
             modules={[EffectCards, Navigation]}
             navigation={true}
+            loop={true}
             className="mySwiper"
           >
             <SwiperSlide>
               <img
                 alt="secondBannerImage"
-                src="Banner/2.jpg"
+                src="./Banner/1.jpg"
                 className="bannerimg"
               ></img>
             </SwiperSlide>
             <SwiperSlide>
               <img
                 alt="secondBannerImage"
-                src="Banner/1.jpg"
+                src="./Banner/2.jpg"
                 className="bannerimg"
               ></img>
             </SwiperSlide>
             <SwiperSlide>
               <img
                 alt="secondBannerImage"
-                src="Banner/3.jpg"
+                src="./Banner/3.jpg"
                 className="bannerimg"
               ></img>
             </SwiperSlide>
             <SwiperSlide>
               <img
                 alt="secondBannerImage"
-                src="Banner/5.jpg"
+                src="./Banner/4.jpg"
                 className="bannerimg"
               ></img>
             </SwiperSlide>

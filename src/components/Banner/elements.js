@@ -5,10 +5,10 @@ import Banner from "../../assets/banner1 (2).jpg";
 
 export const BannerContainer = styled(Box)({
   display: "flex",
-  justifyContent: "left",
+  alignItems: "center",
+  justifyContent: "center",
+  gap: "5rem",
   height: "44rem",
-  maxWidth: "100%",
-  position: "relative",
   marginTop: "38rem",
 });
 export const BannerFirst = styled(Box)({
@@ -44,7 +44,6 @@ export const BannerSecond = styled(Box)({
   alignItems: "center",
   // gap: "1rem",
   height: "100%",
-  // padding: "1rem",
 
   // backgroundColor: 'white',
   // opacity:"0.3"

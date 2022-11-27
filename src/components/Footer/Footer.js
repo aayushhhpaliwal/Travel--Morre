@@ -109,7 +109,7 @@ function Footer() {
         </UniversalFlexDiv>
 
         <UniversalFlexDiv flexDirection={"column"} alignItems={"start"}>
-          <Typography variant="h6">Support</Typography>
+          {/* <Typography variant="h6">Support</Typography> */}
           {/* <Typography>FAQ</Typography>
           <Typography>How It Works</Typography> */}
         </UniversalFlexDiv>
