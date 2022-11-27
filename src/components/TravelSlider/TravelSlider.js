@@ -32,14 +32,22 @@ function TravelSlider() {
       <SubHeader fontSize="3rem" margin="1rem">
         Places
       </SubHeader>
+
       <Carousel responsive={responsive} infinite>
         {data.map((place, index) => (
-          <PlacestravelCard
-            title={place.title}
-            description={place.desc}
-            index={index}
-            img={place.img}
-          ></PlacestravelCard>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={place.link}
+            style={{ color: "inherit", textDecoration: "none" }}
+          >
+            <PlacestravelCard
+              title={place.title}
+              description={place.desc}
+              index={index}
+              img={place.img}
+            ></PlacestravelCard>
+          </a>
         ))}
       </Carousel>
     </OuterArea>

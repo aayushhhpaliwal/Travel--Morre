@@ -9,11 +9,15 @@ import NewBanner from "../../components/NewBanner/NewBanner";
 
 function Home() {
   return (
-    <UniversalFlexDiv flexDirection={"column"} alignItems={"inherit "}>
+    <UniversalFlexDiv
+      gap={"0"}
+      flexDirection={"column"}
+      alignItems={"inherit "}
+    >
       <NewBanner />
       <Banner />
       <TravelSlider />
-      <Services />
+      {/* <Services /> */}
       {/* <Partner /> */}
       <Footer />
     </UniversalFlexDiv>

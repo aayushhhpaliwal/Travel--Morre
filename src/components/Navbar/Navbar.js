@@ -19,12 +19,18 @@ function Navbar() {
       <NavbarInsideContainer>
         {/* travel morre logo */}
         {/* <ImageContainer src={travelmorreLogo}></ImageContainer> */}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://wa.me/919354029660?text=Hey,%20I%20want%20to%20Explore%20more%20about%20travelMorre%20Services...%20"
+          style={{ color: "inherit", textDecoration: "none" }}
+        >
+          <NavbarHeaders fsize={"2rem"} fweight={900}>
+            Travelmorre.
+          </NavbarHeaders>
+        </a>
 
-        <NavbarHeaders fsize={"2rem"} fweight={900}>
-          Travelmorre.
-        </NavbarHeaders>
-
-        <FlexDiv>
+        {/* <FlexDiv>
           <NavbarHeaders>Discover</NavbarHeaders>
           <ImageContainer
             src={ArrowDown}
@@ -34,29 +40,34 @@ function Navbar() {
         </FlexDiv>
 
         <NavbarHeaders>Creators</NavbarHeaders>
-        <NavbarHeaders>Collectors</NavbarHeaders>
+        <NavbarHeaders>Collectors</NavbarHeaders> */}
       </NavbarInsideContainer>
       <NavbarInsideContainer>
-        <ImageContainer
+        {/* <ImageContainer
           src={SearchIcon}
           width={"1rem"}
           height={"1rem"}
         ></ImageContainer>
-        {/* <NavbarHeaders>Search</NavbarHeaders> */}
-        <NavbarHeaders>Toggle</NavbarHeaders>
-
-        <Button
-          variant="contained"
-          size="large"
-          sx={{
-            color: "#fff",
-            backgroundColor: "#820EF3",
-            padding: "1rem 3rem",
-            borderRadius: "1.2rem",
-          }}
+        <NavbarHeaders>Search</NavbarHeaders>
+        <NavbarHeaders>Toggle</NavbarHeaders> */}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://wa.me/919354029660?text=Hey,%20I%20want%20to%20Explore%20more%20about%20travelMorre%20Services...%20"
         >
-          Book Trips Now
-        </Button>
+          <Button
+            variant="contained"
+            size="large"
+            sx={{
+              color: "#fff",
+              backgroundColor: "#820EF3",
+              padding: "1rem 3rem",
+              borderRadius: "1.2rem",
+            }}
+          >
+            Book Trips Now
+          </Button>
+        </a>
         {/* <NavbarHeaders>Book Now</NavbarHeaders> */}
       </NavbarInsideContainer>
     </NavbarContainer>

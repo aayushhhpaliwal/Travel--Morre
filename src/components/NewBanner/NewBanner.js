@@ -13,19 +13,77 @@ import { Navigation } from "swiper";
 
 export default function App() {
   return (
-    <>
-      <Swiper navigation={true} modules={[Navigation]} className="mySwiper1">
-           <SwiperSlide>
-      <img src="Banner/3.jpg" className="bannerimg1"></img>
-      </SwiperSlide>
-      <SwiperSlide>
-      <img src="Banner/4.jpg" className="bannerimg1"></img>
-      </SwiperSlide>
-      <SwiperSlide>
-      <img src="Banner/5.jpg" className="bannerimg1"></img>
-      </SwiperSlide>
-     
+    <div style={{ borderRadius: "100rem" }}>
+      <Swiper
+        navigation={true}
+        modules={[Navigation]}
+        className="mySwiper1"
+        loop={true}
+      >
+        <SwiperSlide>
+          <img
+            alt="topBannerImage"
+            src="New/bali1.jpg"
+            className="bannerimg1"
+          ></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            alt="topBannerImage"
+            src="New/bali2.jpg"
+            className="bannerimg1"
+          ></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            alt="topBannerImage"
+            src="New/dubai1.jpg"
+            className="bannerimg1"
+          ></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            alt="topBannerImage"
+            src="New/dubai2.jpg"
+            className="bannerimg1"
+          ></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            alt="topBannerImage"
+            src="New/kerala1.jpg"
+            className="bannerimg1"
+          ></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            alt="topBannerImage"
+            src="New/maldives1.jpg"
+            className="bannerimg1"
+          ></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            alt="topBannerImage"
+            src="New/maldives2.jpg"
+            className="bannerimg1"
+          ></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            alt="topBannerImage"
+            src="New/thailand1.jpg"
+            className="bannerimg1"
+          ></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            alt="topBannerImage"
+            src="New/thailand2.jpg"
+            className="bannerimg1"
+          ></img>
+        </SwiperSlide>
       </Swiper>
-    </>
+    </div>
   );
 }

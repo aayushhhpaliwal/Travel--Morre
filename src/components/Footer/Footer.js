@@ -15,6 +15,7 @@ import Instagram from "../../assets/insta.png";
 import Twitter from "../../assets/twitter.png";
 import Whatsapp from "../../assets/whatsapp.png";
 import { Link } from "react-router-dom";
+import data from "../../assets/Data/data.js";
 
 function Footer() {
   return (
@@ -81,25 +82,42 @@ function Footer() {
           </a>
         </UniversalFlexDiv>
       </UniversalFlexDiv>
-      <UniversalFlexDiv alignItems={"start"}>
-        <UniversalFlexDiv flexDirection={"column"} alignItems={"start"}>
-          <Typography>Top Destinations</Typography>
-          <Typography>Dubai</Typography>
-          <Typography>Maldives</Typography>
-          <Typography>Bali</Typography>
-          <Typography>Thailand</Typography>
-          <Typography>Andaman & Nicobar</Typography>
+      <UniversalFlexDiv alignItems={"start"} gap="4rem">
+        <UniversalFlexDiv
+          flexDirection={"column"}
+          alignItems={"Flexstart"}
+          gap="0"
+        >
+          <Typography variant="h6"> Top Destinations</Typography>
+
+          {data.map((place, index) => (
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={place.link}
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              <Typography variant="caption">{place.title}</Typography>
+            </a>
+          ))}
+
+          {/* <Typography variant="caption">Dubai</Typography>
+          <Typography variant="caption">Maldives</Typography>
+          <Typography variant="caption">Bali</Typography>
+          <Typography variant="caption">Thailand</Typography>
+          <Typography variant="caption">Andaman & Nicobar</Typography> */}
         </UniversalFlexDiv>
+
         <UniversalFlexDiv flexDirection={"column"} alignItems={"start"}>
+          <Typography variant="h6">Support</Typography>
+          {/* <Typography>FAQ</Typography>
+          <Typography>How It Works</Typography> */}
+        </UniversalFlexDiv>
+        {/* <UniversalFlexDiv flexDirection={"column"} alignItems={"start"}>
           <Typography>Company</Typography>
           <Typography>About Us</Typography>
           <Typography>Services</Typography>
-        </UniversalFlexDiv>
-        <UniversalFlexDiv flexDirection={"column"} alignItems={"start"}>
-          <Typography>Support</Typography>
-          <Typography>FAQ</Typography>
-          <Typography>How It Works</Typography>
-        </UniversalFlexDiv>
+        </UniversalFlexDiv> */}
       </UniversalFlexDiv>
     </FooterContainer>
   );

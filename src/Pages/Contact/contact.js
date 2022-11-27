@@ -5,10 +5,10 @@ function Contact() {
     <address>
       You can find us here:
       <br />
-      GeeksforGeeks
+      {/* GeeksforGeeks */}
       <br />
-      5th & 6th Floor, Royal Kapsons, A- 118, <br />
-      Sector- 136, Noida, Uttar Pradesh (201305)
+      {/* 5th & 6th Floor, Royal Kapsons, A- 118, <br />
+      Sector- 136, Noida, Uttar Pradesh (201305) */}
     </address>
   );
 }

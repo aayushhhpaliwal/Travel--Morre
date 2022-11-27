@@ -1,13 +1,10 @@
 import "./App.css";
 
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home/home";
 import About from "./Pages/About/about";
 import Contact from "./Pages/Contact/contact";
 import Navbar from "./components/Navbar/Navbar";
-
-import Carousel from "react-multi-carousel";
-import TravelCardForBanner from "./components/TravelCardForBanner/TravelCardForBanner";
 
 function App() {
   return (
