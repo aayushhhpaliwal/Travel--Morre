@@ -5,7 +5,7 @@ import { FooterContainer } from "./elements.js";
 import {
   LogoHeader,
   UniversalFlexDiv,
-  ImageContainer,
+  ImageContainerForFooter,
   SubHeader,
 } from "../TypographyAssets/TypographyAssets";
 import { Typography } from "@mui/material";
@@ -16,7 +16,7 @@ import Twitter from "../../assets/twitter.png";
 import Whatsapp from "../../assets/whatsapp.png";
 import { Link } from "react-router-dom";
 import data from "../../assets/Data/data.js";
-
+import "./styles.css";
 function Footer() {
   return (
     <FooterContainer>
@@ -31,7 +31,7 @@ function Footer() {
         </LogoHeader>
 
         <Typography variant="body1">
-          ...Making our customers happy is our first priority
+          Making our customers happy is our first priority
         </Typography>
 
         <UniversalFlexDiv
@@ -44,11 +44,11 @@ function Footer() {
             rel="noreferrer"
             href="https://www.facebook.com/108738228710554"
           >
-            <ImageContainer
+            <ImageContainerForFooter
               src={Facebook}
               width={"2rem"}
               height={"2rem"}
-            ></ImageContainer>
+            ></ImageContainerForFooter>
           </a>
 
           <a
@@ -56,69 +56,72 @@ function Footer() {
             rel="noreferrer"
             href="https://www.instagram.com/travelmorre"
           >
-            <ImageContainer
+            <ImageContainerForFooter
               src={Instagram}
               width={"2rem"}
               height={"2rem"}
-            ></ImageContainer>
+            ></ImageContainerForFooter>
           </a>
 
-          {/* <ImageContainer
+          {/* <ImageContainerForFooter
             src={Twitter}
             width={"2rem"}
             height={"2rem"}
-          ></ImageContainer> */}
+          ></ImageContainerForFooter> */}
 
           <a
             target="_blank"
             rel="noreferrer"
             href="https://wa.me/919354029660?text=Hey,%20I%20want%20to%20Explore%20more%20about%20travelMorre%20Services...%20"
           >
-            <ImageContainer
+            <ImageContainerForFooter
               src={Whatsapp}
               width={"2rem"}
               height={"2rem"}
-            ></ImageContainer>
+            ></ImageContainerForFooter>
           </a>
         </UniversalFlexDiv>
       </UniversalFlexDiv>
-      <UniversalFlexDiv alignItems={"start"} gap="4rem">
-        <UniversalFlexDiv
-          flexDirection={"column"}
-          alignItems={"Flexstart"}
-          gap="0"
-        >
-          <Typography variant="h6"> Top Destinations</Typography>
 
-          {data.map((place, index) => (
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href={place.link}
-              style={{ color: "inherit", textDecoration: "none" }}
-            >
-              <Typography variant="caption">{place.title}</Typography>
-            </a>
-          ))}
+      <div id="footerLastLinks">
+        <UniversalFlexDiv alignItems={"start"} gap="4rem">
+          <UniversalFlexDiv
+            flexDirection={"column"}
+            alignItems={"Flexstart"}
+            gap="0"
+          >
+            <Typography variant="h6"> Top Destinations</Typography>
 
-          {/* <Typography variant="caption">Dubai</Typography>
+            {data.map((place, index) => (
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={place.link}
+                style={{ color: "inherit", textDecoration: "none" }}
+              >
+                <Typography variant="caption">{place.title}</Typography>
+              </a>
+            ))}
+
+            {/* <Typography variant="caption">Dubai</Typography>
           <Typography variant="caption">Maldives</Typography>
           <Typography variant="caption">Bali</Typography>
           <Typography variant="caption">Thailand</Typography>
           <Typography variant="caption">Andaman & Nicobar</Typography> */}
-        </UniversalFlexDiv>
+          </UniversalFlexDiv>
 
-        <UniversalFlexDiv flexDirection={"column"} alignItems={"start"}>
+          {/* <UniversalFlexDiv flexDirection={"column"} alignItems={"start"}> */}
           {/* <Typography variant="h6">Support</Typography> */}
           {/* <Typography>FAQ</Typography>
           <Typography>How It Works</Typography> */}
-        </UniversalFlexDiv>
-        {/* <UniversalFlexDiv flexDirection={"column"} alignItems={"start"}>
+          {/* </UniversalFlexDiv> */}
+          {/* <UniversalFlexDiv flexDirection={"column"} alignItems={"start"}>
           <Typography>Company</Typography>
           <Typography>About Us</Typography>
           <Typography>Services</Typography>
         </UniversalFlexDiv> */}
-      </UniversalFlexDiv>
+        </UniversalFlexDiv>
+      </div>
     </FooterContainer>
   );
 }

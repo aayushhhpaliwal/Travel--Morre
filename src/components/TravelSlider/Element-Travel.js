@@ -14,4 +14,10 @@ export const OuterArea = styled(Box)({
   //   alignItems: "center",
   //   flexDirection: "column",
   // position:"absoulute"
+
+  "@media (max-width: 400px)": {
+    padding: "1px 10px",
+    marginTop: "1rem",
+    marginLeft: 0,
+  },
 });

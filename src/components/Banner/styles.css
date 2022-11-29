@@ -1,3 +1,18 @@
+@media (max-width: 800px) {
+  #sqrSwiper {
+    /* background-color: red; */
+    width: 30rem;
+    height: 30rem;
+  }
+}
+@media (max-width: 400px) {
+  #sqrSwiper {
+    /* background-color: red; */
+    width: 18rem;
+    height: 18rem;
+  }
+}
+
 .mySwiper {
   width: 40rem;
   height: 40rem;

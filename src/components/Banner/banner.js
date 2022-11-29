@@ -25,7 +25,7 @@ function banner() {
       <BannerFirst>
         {/* <BannerSubHead> </BannerSubHead> */}
         <BannerHead>Plan your trip with us</BannerHead>
-        <hr width="80%"></hr>
+        {/* <hr width="80%"></hr> */}
         <BannerSubHead>
           <br></br>Explore New Destination At Best Price ! <br></br>Try
           Customized Trips, Curated by us and Selected by you.
@@ -41,6 +41,7 @@ function banner() {
             navigation={true}
             loop={true}
             className="mySwiper"
+            id="sqrSwiper"
           >
             <SwiperSlide>
               <img

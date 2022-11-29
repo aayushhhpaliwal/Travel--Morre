@@ -11,13 +11,14 @@ import "./styles.css";
 // import required modules
 import { Navigation } from "swiper";
 
-export default function App() {
+export default function NewBanner() {
   return (
     <div style={{ borderRadius: "100rem" }}>
       <Swiper
         navigation={true}
         modules={[Navigation]}
         className="mySwiper1"
+        id="myTopBannerSwiper"
         loop={true}
       >
         <SwiperSlide>

@@ -13,15 +13,17 @@ export const NavbarContainer = styled(Box)({
   padding: "2rem 3rem",
   zIndex: "1",
   backgroundColor: "white",
+  "@media (max-width: 800px)": {},
+  "@media (max-width: 600px)": { padding: "1rem .5rem" },
 });
 export const NavbarInsideContainer = styled(Box)({
   display: "flex",
-  // backgroundColor:"white",
   gap: "3rem",
   alignItems: "center",
-  //   justifyContent: "space-between",
-  //   padding: "3rem",
   zIndex: "10",
+  "@media (max-width: 400px)": {
+    justifyContent: "flexStart",
+  },
 });
 
 export const ImageContainer = styled("img")(
@@ -41,6 +43,10 @@ export const NavbarHeaders = styled(Typography)(({ fsize, fweight }) => ({
   fontWeight: fweight ? fweight : 500,
   fontFamily: "Poppins",
   cursor: "pointer",
+
+  "@media (max-width: 600px)": {
+    fontSize: "0.6rem",
+  },
 }));
 
 export const FlexDiv = styled(Box)({
@@ -48,7 +54,26 @@ export const FlexDiv = styled(Box)({
   gap: "0.5rem",
   alignItems: "center",
 
-  //   flexDirection: "column",
-  //   justifyContent: "space-between",
-  //   padding: "3rem",
+  "@media (max-width: 600px)": {
+    gap: "0.rem",
+  },
+});
+
+export const NavbarBtnDiv = styled(Box)({
+  width: "10rem",
+  display: "flex",
+  height: "0.1rem",
+  justifyContent: "center",
+  alignItems: "center",
+  backgroundColor: "#820EF3",
+  padding: "1.5rem 3rem",
+  borderRadius: "10rem",
+  // padding: "5rem",
+  color: "#fff",
+  cursor: "pointer",
+
+  "@media (max-width: 600px)": {
+    width: "6rem",
+    padding: ".8rem 1rem",
+  },
 });

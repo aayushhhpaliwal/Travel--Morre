@@ -7,6 +7,7 @@ import {
   NavbarInsideContainer,
   NavbarHeaders,
   FlexDiv,
+  NavbarBtnDiv,
 } from "./elements.js";
 
 import travelmorreLogo from "../../assets/travelmorre.png";
@@ -28,14 +29,7 @@ function Navbar() {
             textDecoration: "none",
           }}
         >
-          <div
-            style={{
-              display: "flex",
-              gap: "1rem",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
+          <FlexDiv>
             <ImageContainer
               src={travelmorreLogo}
               width={"2rem"}
@@ -44,7 +38,7 @@ function Navbar() {
             <NavbarHeaders fsize={"2rem"} fweight={900}>
               Travelmorre.
             </NavbarHeaders>
-          </div>
+          </FlexDiv>
         </a>
 
         {/* <FlexDiv>
@@ -73,7 +67,7 @@ function Navbar() {
           href="https://wa.me/919354029660?text=Hey,%20I%20want%20to%20Explore%20more%20about%20travelMorre%20Services...%20"
           style={{ color: "inherit", textDecoration: "none" }}
         >
-          <Button
+          {/* <Button
             variant="contained"
             size="large"
             sx={{
@@ -81,10 +75,19 @@ function Navbar() {
               backgroundColor: "#820EF3",
               padding: "1rem 3rem",
               borderRadius: "1.2rem",
+
+              "@media (max-width: 400px)": {
+                height: "1rem",
+                // size: "small",
+              },
             }}
           >
             Book Your Trip Now
-          </Button>
+          </Button> */}
+
+          <NavbarBtnDiv>
+            <NavbarHeaders>Book Your Trip Now</NavbarHeaders>
+          </NavbarBtnDiv>
         </a>
         {/* <NavbarHeaders>Book Now</NavbarHeaders> */}
       </NavbarInsideContainer>
