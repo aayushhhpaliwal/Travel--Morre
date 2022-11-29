@@ -1,15 +1,18 @@
 import { Box, Typography, styled } from "@mui/material";
+import { useMediaQuery } from "react-responsive";
 
-// export const NavbarContainer = styled(Box) ({
+// const isBigScreen = useMediaQuery({ query: "(min-width: 1824px)" });
+// const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1224px)" });
+// const isPortrait = useMediaQuery({ query: "(orientation: portrait)" });
+// const isRetina = useMediaQuery({ query: "(min-resolution: 2dppx)" });
 
-// })
 export const NavbarContainer = styled(Box)({
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
   padding: "2rem 3rem",
   zIndex: "1",
-  backgroundColor:"white",
+  backgroundColor: "white",
 });
 export const NavbarInsideContainer = styled(Box)({
   display: "flex",
