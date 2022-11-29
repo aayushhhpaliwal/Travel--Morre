@@ -45,35 +45,35 @@ function banner() {
             <SwiperSlide>
               <img
                 alt="secondBannerImage"
-                src="./Banner/1.jpg"
+                src="banner/1.jpg"
                 className="bannerimg"
               ></img>
             </SwiperSlide>
             <SwiperSlide>
               <img
                 alt="secondBannerImage"
-                src="./Banner/2.jpg"
+                src="banner/2.jpg"
                 className="bannerimg"
               ></img>
             </SwiperSlide>
             <SwiperSlide>
               <img
                 alt="secondBannerImage"
-                src="./Banner/3.jpg"
+                src="banner/3.jpg"
                 className="bannerimg"
               ></img>
             </SwiperSlide>
             <SwiperSlide>
               <img
                 alt="secondBannerImage"
-                src="./Banner/4.jpg"
+                src="banner/4.jpg"
                 className="bannerimg"
               ></img>
             </SwiperSlide>
             <SwiperSlide>
               <img
                 alt="secondBannerImage"
-                src="Banner/2.jpg"
+                src="banner/2.jpg"
                 className="bannerimg"
               ></img>
             </SwiperSlide>
