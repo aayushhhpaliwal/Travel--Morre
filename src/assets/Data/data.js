@@ -36,6 +36,12 @@ const data = [
     img: "./Places/Andaman.jpg",
     link: "https://drive.google.com/file/d/1eBFS9lns0GiZxfLPUqDoSCwMRgHkYK2c/view?usp=share_link",
   },
+  {
+    title: "Singapore",
+    desc: "Singapore has been in the top ten list of the most visited cities in the world for years. Our small yet beautiful island deserves it as the city has all to satisfy any need of visitors: green and safe environment, cultural diversity, delicious food, world-class shopping malls, the latest fashion and electronics, vibrant nightlife, cheap and convenient public transport, and many more.",
+    img: "./Places/singapore.jpg",
+    link: "https://drive.google.com/file/d/1fseUv5RdIc75llTbQGpQwKZgXeWvunjg/view?usp=share_link",
+  },
 ];
 
 export default data;
