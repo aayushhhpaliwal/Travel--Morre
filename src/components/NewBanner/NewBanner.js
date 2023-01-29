@@ -24,28 +24,35 @@ export default function NewBanner() {
         <SwiperSlide>
           <img
             alt="topBannerImage"
-            src="New/bali1.jpg"
+            src="New/dubai02.jpg"
             className="bannerimg1"
           ></img>
         </SwiperSlide>
         <SwiperSlide>
           <img
             alt="topBannerImage"
-            src="New/bali2.jpg"
+            src="New/maldives5.jpg"
             className="bannerimg1"
           ></img>
         </SwiperSlide>
         <SwiperSlide>
           <img
             alt="topBannerImage"
-            src="New/dubai1.jpg"
+            src="New/maldives3.jpg"
             className="bannerimg1"
           ></img>
         </SwiperSlide>
         <SwiperSlide>
           <img
             alt="topBannerImage"
-            src="New/dubai2.jpg"
+            src="New/maldives4.jpg"
+            className="bannerimg1"
+          ></img>
+        </SwiperSlide>
+        <SwiperSlide>
+          <img
+            alt="topBannerImage"
+            src="New/maldives6.jpg"
             className="bannerimg1"
           ></img>
         </SwiperSlide>
